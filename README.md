@@ -41,15 +41,23 @@ Test set RMSE of dt: 0.02
 Linear Regression test set RMSE: 0.02
 Regression Tree test set RMSE: 0.02
 
-5.Plate Discipline vs SLG
+5.Plate Discipline vs ISO
 Test set RMSE of dt: 0.04
 Linear Regression test set RMSE: 0.04
 Regression Tree test set RMSE: 0.04
 
-6.Plate Discipline vs OPS
+6.Plate Discipline vs wOBA
 Test set RMSE of dt: 0.02
 Linear Regression test set RMSE: 0.02
 Regression Tree test set RMSE: 0.02
 
-7.Plate Discipline vs ISO
+7.Plate Discipline vs wRC+
+Test set RMSE of dt: 15.68
+Linear Regression test set RMSE: 15.32
+Regression Tree test set RMSE: 15.68
+
+8.7.Plate Discipline vs per game WAR
+Test set RMSE of dt: 0.00
+Linear Regression test set RMSE: 0.00
+Regression Tree test set RMSE: 0.00
 
