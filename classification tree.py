@@ -115,13 +115,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # Instantiate dt
-dt = DecisionTreeClassifier(max_depth=6, random_state=1)
+dt = DecisionTreeClassifier(max_depth=50, random_state=1)
 
 
 # Split dataset into 80% train, 20% test
 X_train, X_test, y_train, y_test = train_test_split(df_com['OBP'].values.reshape(-1, 1), 
                  df_com['POST'].values.reshape(-1, 1), 
-                 test_size=0.2,
+                 test_size=0.1,
                  stratify=df_com['POST'].values.reshape(-1, 1), 
                  random_state=1)
 
@@ -135,14 +135,13 @@ y_pred = dt.predict(X_test)
 acc = accuracy_score(y_test, y_pred)
 print("Test set accuracy: {:.2f}".format(acc))
 
-
 #—unconstrained tree(entropy criterion)————-
 
 # Import DecisionTreeClassifier from sklearn.tree
 from sklearn.tree import DecisionTreeClassifier
 
 # Instantiate dt_entropy, set 'entropy' as the information criterion
-dt_entropy = DecisionTreeClassifier(max_depth=8, 
+dt_entropy = DecisionTreeClassifier(max_depth=100, 
                                     criterion='entropy', 
                                     random_state=1)
 
@@ -160,7 +159,7 @@ accuracy_entropy = accuracy_score(y_test, y_pred)
 
 #—unconstrained tree(gini criterion)————-
 # Instantiate dt_entropy, set 'gini' as the information criterion
-dt_gini = DecisionTreeClassifier(max_depth=8, 
+dt_gini = DecisionTreeClassifier(max_depth=100, 
                                     criterion='gini', 
                                     random_state=1)
 
