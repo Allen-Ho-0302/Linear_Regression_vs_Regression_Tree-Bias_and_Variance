@@ -1,4 +1,4 @@
-Using classification tree 
+-----------------Classification tree-------------------------------------------------------------------------------------------------
 
 Gathering MLB regular season team stats from 2012-2019, including stats like PA, AB, H, 2B, 3B, HR, RBI, SB, BA, OBP, SLG, etc
 
@@ -11,3 +11,45 @@ constrained tree, max_depth=100 : Test set accuracy= 0.83
 unconstrained tree(entropy criterion) : Test set Accuracy = 0.8333333333333334
 
 unconstrained tree(gini criterion) : Test set Accuracy = 0.8333333333333334
+
+-----------------Regression tree-------------------------------------------------------------------------------------------------
+
+see if plate discipline in baseball affected other stats including regular ones like BB%, K%, AVG, OBP, SLG, OPS, ISO, wOBA, wRC+, per game WAR
+
+Plate Discipline defined as (ZSwing%-OSwing%)/Swing%
+
+Result:
+
+1.Plate Discipline vs BB%
+
+Test set RMSE of dt: 0.01
+Linear Regression test set RMSE: 0.01
+Regression Tree test set RMSE: 0.01
+
+2.Plate Discipline vs K%
+Test set RMSE of dt: 0.05
+Linear Regression test set RMSE: 0.05
+Regression Tree test set RMSE: 0.05
+
+3.Plate Discipline vs AVG
+Test set RMSE of dt: 0.02
+Linear Regression test set RMSE: 0.02
+Regression Tree test set RMSE: 0.02
+
+4.Plate Discipline vs OBP
+Test set RMSE of dt: 0.02
+Linear Regression test set RMSE: 0.02
+Regression Tree test set RMSE: 0.02
+
+5.Plate Discipline vs SLG
+Test set RMSE of dt: 0.04
+Linear Regression test set RMSE: 0.04
+Regression Tree test set RMSE: 0.04
+
+6.Plate Discipline vs OPS
+Test set RMSE of dt: 0.02
+Linear Regression test set RMSE: 0.02
+Regression Tree test set RMSE: 0.02
+
+7.Plate Discipline vs ISO
+
