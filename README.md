@@ -61,3 +61,5 @@ Test set RMSE of dt: 0.00
 Linear Regression test set RMSE: 0.00
 Regression Tree test set RMSE: 0.00
 
+Right now as the result shows, there is not much difference betweeen using general linear regression and regression tree based on the same RMSE.
+
