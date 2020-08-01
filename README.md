@@ -1,8 +1,13 @@
 -----------------Classification tree-------------------------------------------------------------------------------------------------
+Introduction:
 
-Gathering MLB regular season team stats from 2012-2019, including stats like PA, AB, H, 2B, 3B, HR, RBI, SB, BA, OBP, SLG, etc
+See how stats like PA, AB, H, 2B, 3B, HR, RBI, SB, BA, OBP, SLG, etc influence postseason birth
 
-See how these stats influence postseason birth
+Methods:
+
+Gathering MLB regular season team stats from 2012-2019, including 
+
+Using classification tree 
 
 Result:
 
@@ -14,9 +19,15 @@ unconstrained tree(gini criterion) : Test set Accuracy = 0.8333333333333334
 
 -----------------Regression tree-------------------------------------------------------------------------------------------------
 
+Introduction:
+
 see if plate discipline in baseball affected other stats including regular ones like BB%, K%, AVG, OBP, SLG, OPS, ISO, wOBA, wRC+, per game WAR
 
+Methods:
+
 Plate Discipline defined as (ZSwing%-OSwing%)/Swing%
+
+Using Regression tree
 
 Result:
 
